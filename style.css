@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+*{
+list-style:none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+width: 120px;
+text-decoration: none;
+color: white;
+transition: .5s ease color;
+}
+.sidebar-item a:hover{
+    color: pink;
+    }
+.sidebar{
+   height: 100vh;
+    border-right: 1px solid #717171;
+    width: 100px;
+    padding-top: 10px;
+    margin-top: 60px;
+  transform: translateX(-200px);
+  animation: sidebar 2s forwards;
+}
+@keyframes sidebar{
+to{
+    transform: translateX(0px);
+}
+}
+.sidebar i{
+    font-size: 20px;
+
+}
+.sidebar-item span{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.sidebar-item{
+    margin-top: 15px;
+}
+.sidebar-links .sidebar-item:nth-child(2) a:focus{
+    color: blue;
+    transition: 0.2s;
+}
+.sidebar-links .sidebar-item:nth-child(2) a:link{
+    color: pink;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+header{
+
+  
+    position: fixed;
+    width: 100%;
+border-bottom: 1px solid #717171;
+z-index: 10;
+background-color: #0f0f0f;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+
+}
+
+
+.head-left{
+    display: flex;
+    align-items: center;
+    
+}
+header i{
+    font-size: 30px;
+
+}
+.head-left h3{
+    font-size: 24px;
+    color: #FF0000;
+    margin-left: 30px;
+    cursor: pointer;
+    color: white;
+}
+.head-center{
+    display: flex;
+    align-items: center;
+}
+.header-search input{
+background-color: #0f0f0f;
+border: none;
+outline: none;
+}
+.header-search{
+    border: 1px solid #717171;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    margin-right: 12px;
+}
+.header-search .bi-search{
+    font-size: 18px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.head-center .bi-mic{
+    background-color: #342A28;
+ padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head-right{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.head-right .bi-camera-video{
+    margin-right: 20px;
+}
+
+.head-right .bi-bell::after{
+    content: "9+";
+    background-color: red;
+width: 10px;
+height: 10px;
+display: flex;
+    color: white;
+    font-size: 10px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5px;
+    right: 10;
+    position: absolute;
+    border-radius: 50%;
+
+  }
+.head-right .bi-bell{
+    margin-right: 20px;
+
+}
+.content{
+    display: flex;
+
+}
+.video-list{
+    color: white;
+   list-style: none;
+    margin-top: 70px;
+   
+
+}
+
+.video-image{
+    position: relative;
+    display: flex;
+}
+.video-image span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #0f0f0f;
+    font-size: 20px;
+padding:0 4px;
+}
+.video-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+}
+.video-text a{
+color: white;
+text-decoration: none;
+
+}
+.video-text span{
+    font-size: 12px;
+}
